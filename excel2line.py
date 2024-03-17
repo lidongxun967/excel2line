@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+import openpyxl
 
 upf = st.file_uploader('导入excel文件',type=['xlsx','xls'])
 
