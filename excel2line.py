@@ -22,6 +22,6 @@ for tab,name in zip(tabs,names):
     with tab:
         
         df = dfs[name]
-        len(df)
+        st.text(len(df))
         st.line_chart(df)
 
