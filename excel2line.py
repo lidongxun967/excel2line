@@ -18,7 +18,7 @@ tabs = st.tabs(names)
 
 
 for tab,name in zip(tabs,names):
-    tab
+    name
     with tab:
         df = dfs[name]
         st.line_chart(df)
