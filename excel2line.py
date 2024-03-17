@@ -15,9 +15,10 @@ names = list(dfs.keys())
 
 tabs = st.tabs(names)
 
-tabs
+
 
 for tab,name in zip(tabs,names):
+    tab
     with tab:
         df = dfs[name]
         st.line_chart(df)
