@@ -1,6 +1,8 @@
 import streamlit as st
 import pandas as pd
 
+st.title('数据分析')
+
 upf = st.file_uploader('导入excel文件',type=['xlsx','xls'])
 
 if not upf:
