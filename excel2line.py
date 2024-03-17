@@ -9,8 +9,12 @@ upf = st.file_uploader('导入excel文件',type=['xlsx','xls'])
 
 if not upf:
     st.stop()
-    
-dfs = pd.read_excel(upf,None)
+
+try:
+    dfs = pd.read_excel(upf,None)
+except :
+    st.toast("文件格式错误！",icon="❗")
+    st.stop()
 
 names = list(dfs.keys())
 
