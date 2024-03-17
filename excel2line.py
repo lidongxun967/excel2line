@@ -4,6 +4,7 @@ import pandas as pd
 st.set_page_config("Excel转折线图",layout="wide",page_icon="♾️")
 st.title('Excel转折线图')
 
+
 upf = st.file_uploader('导入excel文件',type=['xlsx','xls'])
 
 if not upf:
@@ -18,10 +19,7 @@ tabs = st.tabs(names)
 
 
 for tab,name in zip(tabs,names):
-    
     with tab:
-        
         df = dfs[name]
-        st.text(len(df[0]))
         st.line_chart(df)
 
