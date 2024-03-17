@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 
-st.set_page_config("Excel转折线图",layout="wide",page_icon="♾️",initial_sidebar_state="collapsed")
+st.set_page_config("Excel转折线图",layout="wide",page_icon="♾️",initial_sidebar_state="expanded")
 st.title('Excel转折线图')
 
 upf = st.file_uploader('导入excel文件',type=['xlsx','xls'])
